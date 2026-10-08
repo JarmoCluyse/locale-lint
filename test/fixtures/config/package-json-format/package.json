@@ -1,0 +1,8 @@
+{
+  "name": "fixture-pkg",
+  "version": "1.0.0",
+  "localeLint": {
+    "sourceLanguage": "en",
+    "namespace": true
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "project": "by-frameworks/jekyll",
+  "command": "hardstring",
+  "exitCode": 3,
+  "stdout": "{\n  \"schemaVersion\": 1,\n  \"summary\": {\n    \"filesScanned\": 1,\n    \"filesSkipped\": 0,\n    \"findingsCount\": 1\n  },\n  \"findings\": [\n    {\n      \"file\": \"_pages/404.html\",\n      \"line\": 1,\n      \"column\": 1,\n      \"endLine\": 7,\n      \"endColumn\": 1,\n      \"text\": \"---\\nlayout: default\\nnot_in_footer: true\\nref: four_hundred_four\\n---\",\n      \"source\": \"html-inline\",\n      \"languageId\": \"html\"\n    }\n  ],\n  \"skipped\": []\n}\n",
+  "stderr": "1 hard-coded string(s) found, exceeding the allowed 0.\n"
+}

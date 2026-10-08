@@ -1,0 +1,7 @@
+{
+  "project": "by-frameworks/ngneat-transloco",
+  "command": "usage",
+  "exitCode": 1,
+  "stdout": "{\n  \"schemaVersion\": 1,\n  \"summary\": {\n    \"filesScanned\": 2,\n    \"filesSkipped\": 0,\n    \"missingCount\": 2,\n    \"unusedCount\": 0,\n    \"usedKeyCount\": 4,\n    \"overallCoverage\": 100\n  },\n  \"missing\": [\n    {\n      \"key\": \"some.nested\",\n      \"locale\": \"en\",\n      \"file\": \"app/home.component.ts\",\n      \"line\": 17,\n      \"column\": 41,\n      \"occurrenceCount\": 1\n    },\n    {\n      \"key\": \"some.nested\",\n      \"locale\": \"es\",\n      \"file\": \"app/home.component.ts\",\n      \"line\": 17,\n      \"column\": 41,\n      \"occurrenceCount\": 1\n    }\n  ],\n  \"unused\": [],\n  \"coverage\": [\n    {\n      \"locale\": \"en\",\n      \"total\": 3,\n      \"translated\": 3,\n      \"missing\": 0,\n      \"percentage\": 100\n    },\n    {\n      \"locale\": \"es\",\n      \"total\": 3,\n      \"translated\": 3,\n      \"missing\": 0,\n      \"percentage\": 100\n    }\n  ],\n  \"dynamicKeyUsages\": [],\n  \"caveats\": [],\n  \"localeDiagnostics\": [],\n  \"skipped\": []\n}\n",
+  "stderr": "2 missing key usage(s), exceeding the allowed 0.\n"
+}

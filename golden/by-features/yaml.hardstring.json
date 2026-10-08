@@ -1,0 +1,7 @@
+{
+  "project": "by-features/yaml",
+  "command": "hardstring",
+  "exitCode": 3,
+  "stdout": "{\n  \"schemaVersion\": 1,\n  \"summary\": {\n    \"filesScanned\": 1,\n    \"filesSkipped\": 0,\n    \"findingsCount\": 1\n  },\n  \"findings\": [\n    {\n      \"file\": \"App.vue\",\n      \"line\": 10,\n      \"column\": 9,\n      \"endLine\": 10,\n      \"endColumn\": 14,\n      \"text\": \"App\",\n      \"source\": \"js-string\",\n      \"languageId\": \"vue\"\n    }\n  ],\n  \"skipped\": []\n}\n",
+  "stderr": "1 hard-coded string(s) found, exceeding the allowed 0.\n"
+}

@@ -1,0 +1,10 @@
+{
+  "hello": "你好",
+  "farewell": "再见",
+  "nested": {
+    "greeting": "早上好",
+    "foo": {
+      "bar": "foobar-zh"
+    }
+  }
+}

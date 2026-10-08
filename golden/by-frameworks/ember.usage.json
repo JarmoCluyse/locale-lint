@@ -1,0 +1,7 @@
+{
+  "project": "by-frameworks/ember",
+  "command": "usage",
+  "exitCode": 1,
+  "stdout": "{\n  \"schemaVersion\": 1,\n  \"summary\": {\n    \"filesScanned\": 1,\n    \"filesSkipped\": 0,\n    \"missingCount\": 2,\n    \"unusedCount\": 0,\n    \"usedKeyCount\": 3,\n    \"overallCoverage\": 66.67\n  },\n  \"missing\": [\n    {\n      \"key\": \"some.key\",\n      \"locale\": \"zh-cn\",\n      \"file\": \"template.hbs\",\n      \"line\": 3,\n      \"column\": 6,\n      \"occurrenceCount\": 1\n    },\n    {\n      \"key\": \"some.other.key\",\n      \"locale\": \"zh-cn\",\n      \"file\": \"template.hbs\",\n      \"line\": 5,\n      \"column\": 16,\n      \"occurrenceCount\": 1\n    }\n  ],\n  \"unused\": [],\n  \"coverage\": [\n    {\n      \"locale\": \"en\",\n      \"total\": 3,\n      \"translated\": 3,\n      \"missing\": 0,\n      \"percentage\": 100\n    },\n    {\n      \"locale\": \"zh-cn\",\n      \"total\": 3,\n      \"translated\": 1,\n      \"missing\": 2,\n      \"percentage\": 33.33\n    }\n  ],\n  \"dynamicKeyUsages\": [],\n  \"caveats\": [],\n  \"localeDiagnostics\": [],\n  \"skipped\": []\n}\n",
+  "stderr": "2 missing key usage(s), exceeding the allowed 0.\n"
+}

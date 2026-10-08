@@ -1,0 +1,7 @@
+{
+  "project": "by-frameworks/chrome-extension",
+  "command": "usage",
+  "exitCode": 0,
+  "stdout": "{\n  \"schemaVersion\": 1,\n  \"summary\": {\n    \"filesScanned\": 1,\n    \"filesSkipped\": 1,\n    \"missingCount\": 0,\n    \"unusedCount\": 0,\n    \"usedKeyCount\": 0,\n    \"overallCoverage\": 100\n  },\n  \"missing\": [],\n  \"unused\": [],\n  \"coverage\": [],\n  \"dynamicKeyUsages\": [],\n  \"caveats\": [],\n  \"localeDiagnostics\": [],\n  \"skipped\": [\n    {\n      \"file\": \"popup.js\",\n      \"reason\": \"parse-error\",\n      \"detail\": \"[shims/core-global] \\\"Global.getUsageMatchRegex(\\\"javascript\\\", \\\"popup.js\\\")\\\" resolved to an empty regex list, which would silently find zero usage keys and report a false-clean scan. This happens when no framework is detected/configured (enabledFrameworks is empty) and neither \\\"regex.usageMatch\\\" nor \\\"regex.usageMatchAppend\\\" supplies a pattern. Set `frameworks` explicitly, or provide `regex.usageMatch`/`regex.usageMatchAppend`, to fix this — or, if scanning source code usage is genuinely not wanted for this project, don't call usage scanning at all rather than running it against an empty pattern set.\"\n    }\n  ]\n}\n",
+  "stderr": ""
+}

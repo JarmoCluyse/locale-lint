@@ -1,0 +1,7 @@
+{
+  "project": "by-frameworks/i18n-js",
+  "command": "usage",
+  "exitCode": 0,
+  "stdout": "{\n  \"schemaVersion\": 1,\n  \"summary\": {\n    \"filesScanned\": 7,\n    \"filesSkipped\": 0,\n    \"missingCount\": 0,\n    \"unusedCount\": 0,\n    \"usedKeyCount\": 1,\n    \"overallCoverage\": 100\n  },\n  \"missing\": [],\n  \"unused\": [],\n  \"coverage\": [\n    {\n      \"locale\": \"en\",\n      \"total\": 1,\n      \"translated\": 1,\n      \"missing\": 0,\n      \"percentage\": 100\n    },\n    {\n      \"locale\": \"sk\",\n      \"total\": 1,\n      \"translated\": 1,\n      \"missing\": 0,\n      \"percentage\": 100\n    }\n  ],\n  \"dynamicKeyUsages\": [],\n  \"caveats\": [],\n  \"localeDiagnostics\": [],\n  \"skipped\": []\n}\n",
+  "stderr": ""
+}

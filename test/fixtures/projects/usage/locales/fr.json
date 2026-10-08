@@ -1,0 +1,8 @@
+{
+  "greeting": "Bonjour",
+  "unused_key": "Je ne suis pas utilisé",
+  "errors": {
+    "notFound": "Introuvable",
+    "timeout": "Expiré"
+  }
+}

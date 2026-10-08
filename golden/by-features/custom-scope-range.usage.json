@@ -1,0 +1,7 @@
+{
+  "project": "by-features/custom-scope-range",
+  "command": "usage",
+  "exitCode": 1,
+  "stdout": "{\n  \"schemaVersion\": 1,\n  \"summary\": {\n    \"filesScanned\": 5,\n    \"filesSkipped\": 0,\n    \"missingCount\": 2,\n    \"unusedCount\": 2,\n    \"usedKeyCount\": 6,\n    \"overallCoverage\": 100\n  },\n  \"missing\": [\n    {\n      \"key\": \"bar\",\n      \"locale\": \"en\",\n      \"file\": \"src/App.jsx\",\n      \"line\": 40,\n      \"column\": 6,\n      \"occurrenceCount\": 1\n    },\n    {\n      \"key\": \"title\",\n      \"locale\": \"en\",\n      \"file\": \"src/App.jsx\",\n      \"line\": 51,\n      \"column\": 6,\n      \"occurrenceCount\": 5\n    }\n  ],\n  \"unused\": [\n    {\n      \"key\": \"translation.foo.bar\",\n      \"locales\": [\n        \"en\"\n      ],\n      \"file\": \"public/locales/en/translation.json\"\n    },\n    {\n      \"key\": \"translation.titlew\",\n      \"locales\": [\n        \"en\"\n      ],\n      \"file\": \"public/locales/en/translation.json\"\n    }\n  ],\n  \"coverage\": [\n    {\n      \"locale\": \"en\",\n      \"total\": 6,\n      \"translated\": 6,\n      \"missing\": 0,\n      \"percentage\": 100\n    }\n  ],\n  \"dynamicKeyUsages\": [],\n  \"caveats\": [],\n  \"localeDiagnostics\": [],\n  \"skipped\": []\n}\n",
+  "stderr": "2 missing key usage(s), exceeding the allowed 0.\n"
+}

@@ -1,0 +1,7 @@
+{
+  "project": "by-frameworks/next-intl",
+  "command": "hardstring",
+  "exitCode": 3,
+  "stdout": "{\n  \"schemaVersion\": 1,\n  \"summary\": {\n    \"filesScanned\": 12,\n    \"filesSkipped\": 0,\n    \"findingsCount\": 4\n  },\n  \"findings\": [\n    {\n      \"file\": \"src/app/[locale]/UseTranslationsTest1.tsx\",\n      \"line\": 4,\n      \"column\": 29,\n      \"endLine\": 4,\n      \"endColumn\": 35,\n      \"text\": \"Test\",\n      \"source\": \"js-string\",\n      \"languageId\": \"typescriptreact\"\n    },\n    {\n      \"file\": \"src/app/[locale]/page.tsx\",\n      \"line\": 11,\n      \"column\": 56,\n      \"endLine\": 11,\n      \"endColumn\": 66,\n      \"text\": \"Metadata\",\n      \"source\": \"js-string\",\n      \"languageId\": \"typescriptreact\"\n    },\n    {\n      \"file\": \"src/app/[locale]/page.tsx\",\n      \"line\": 43,\n      \"column\": 29,\n      \"endLine\": 43,\n      \"endColumn\": 35,\n      \"text\": \"Test\",\n      \"source\": \"js-string\",\n      \"languageId\": \"typescriptreact\"\n    },\n    {\n      \"file\": \"src/app/[locale]/page.tsx\",\n      \"line\": 53,\n      \"column\": 35,\n      \"endLine\": 53,\n      \"endColumn\": 41,\n      \"text\": \"Test\",\n      \"source\": \"js-string\",\n      \"languageId\": \"typescriptreact\"\n    }\n  ],\n  \"skipped\": []\n}\n",
+  "stderr": "4 hard-coded string(s) found, exceeding the allowed 0.\n"
+}

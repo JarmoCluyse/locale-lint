@@ -1,0 +1,9 @@
+{
+  "name": "fixture-svelte",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "svelte": "^3.38.2",
+    "svelte-i18n": "latest"
+  }
+}

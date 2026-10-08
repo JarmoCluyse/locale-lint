@@ -1,0 +1,66 @@
+NOTICE
+======
+
+This project ("i18n-runner") vendors source code from the VS Code extension
+lokalise/i18n-ally (https://github.com/lokalise/i18n-ally), licensed under
+the MIT License (see LICENSE).
+
+Vendored commit: 4c504c93 (tag: 2.13.1)
+
+Vendored directories/files (under `src/vendor/`):
+
+  - extraction/**            (hard-string extraction: rules, babel/html parsers)
+  - parsers/**               (locale file format parsers: json, json5, yaml, ini,
+                               po, php, properties, ftl, ecmascript)
+  - frameworks/**             (all i18n framework definitions: vue, react-i18next,
+                               i18next, ngx-translate, flutter, rails, laravel, etc.)
+  - packagesParsers/**        (package.json / pubspec.yaml / composer.json / Gemfile
+                               parsers used to detect framework config)
+  - core/KeyDetector.ts, core/Analyst.ts, core/types.ts
+  - core/Nodes.ts, core/Errors.ts, core/Telemetry.ts, core/Translator.ts
+                               (pulled in transitively by core/loaders/**)
+  - core/loaders/**           (ComposedLoader, LocaleLoader, VueSfcLoader,
+                               FluentVueSfcLoader, Loader base class)
+  - meta.ts                   (shared constants, pulled in by Nodes.ts/LocaleLoader.ts)
+  - utils/glob.ts and small utils it/the above files depend on (Log, LanguageId,
+    utils, UnicodeDecorator, UnicodeProgressBar, NodeHelper, File, Regex, flat,
+    flags, cache, PathMatcher, prompts, shared, keypathValidate, index)
+
+Every vendored file carries a header comment:
+
+  // Vendored from lokalise/i18n-ally @4c504c93 — MIT. See NOTICE.
+
+IMPORTANT — these files were copied verbatim (not adapted) and will NOT compile
+as-is. They still contain unresolved imports of:
+
+  - `vscode` (the VS Code extension API — not available outside the editor)
+  - `./Global` / `../Global` / `~/core` (core/Global.ts, the extension's global
+    singleton)
+  - `./Config` / `../Config` / `~/core` (core/Config.ts, the extension's
+    workspace-config singleton)
+  - `./CurrentFile` / `~/core` (core/CurrentFile.ts — holds VS Code editor/
+    document state; equally extension-runtime-coupled and was NOT vendored)
+  - a handful of other extension-only modules reached transitively through
+    core/loaders/** and core/Telemetry.ts / core/Translator.ts: `~/i18n`,
+    `~/env`, `~/extension`, `~/views`, `~/commands` (incl.
+    `~/commands/manipulations`), `~/translators`, `@amplitude/analytics-node`
+
+These are intentionally left untouched; replacing them with CLI-appropriate
+shims is the responsibility of the next lane. See the Fixer report for the
+full file:line inventory.
+
+Upstream credits (carried forward per i18n-ally's own NOTICE/README, since
+i18n-ally itself builds on / credits prior art):
+
+  - think2011/vscode-vue-i18n (https://github.com/think2011/vscode-vue-i18n)
+  - kazupon/vue-i18n-locale-message (https://github.com/kazupon/vue-i18n-locale-message)
+
+See LICENSE for the full MIT license text and copyright holders
+(Lokalise Inc. 2021-PRESENT, Anthony Fu 2019-2020, think2011 2018-2019).
+
+Additionally, `test/conformance/corpus/**` is a verbatim copy of upstream
+i18n-ally's own example projects (`examples/by-frameworks/**` and
+`examples/by-features/**` at the same vendored commit, 4c504c93 / 2.13.1),
+used here as a test fixture corpus for the golden conformance suite
+(`test/conformance/golden.test.ts`, see `docs/conformance.md`). See
+`test/conformance/corpus/ATTRIBUTION.md` for details.

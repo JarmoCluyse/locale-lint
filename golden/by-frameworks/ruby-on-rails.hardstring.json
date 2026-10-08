@@ -1,0 +1,7 @@
+{
+  "project": "by-frameworks/ruby-on-rails",
+  "command": "hardstring",
+  "exitCode": 0,
+  "stdout": "{\n  \"schemaVersion\": 1,\n  \"summary\": {\n    \"filesScanned\": 1,\n    \"filesSkipped\": 0,\n    \"findingsCount\": 0\n  },\n  \"findings\": [],\n  \"skipped\": []\n}\n",
+  "stderr": ""
+}

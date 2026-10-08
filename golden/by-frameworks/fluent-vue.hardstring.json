@@ -1,0 +1,7 @@
+{
+  "project": "by-frameworks/fluent-vue",
+  "command": "hardstring",
+  "exitCode": 3,
+  "stdout": "{\n  \"schemaVersion\": 1,\n  \"summary\": {\n    \"filesScanned\": 3,\n    \"filesSkipped\": 0,\n    \"findingsCount\": 2\n  },\n  \"findings\": [\n    {\n      \"file\": \"src/App.vue\",\n      \"line\": 20,\n      \"column\": 10,\n      \"endLine\": 22,\n      \"endColumn\": 5,\n      \"text\": \"Plain text to extract\",\n      \"source\": \"html-inline\",\n      \"languageId\": \"vue\"\n    },\n    {\n      \"file\": \"src/App.vue\",\n      \"line\": 45,\n      \"column\": 14,\n      \"endLine\": 45,\n      \"endColumn\": 43,\n      \"text\": \"Plain text in js to extract\",\n      \"source\": \"js-string\",\n      \"languageId\": \"vue\"\n    }\n  ],\n  \"skipped\": []\n}\n",
+  "stderr": "2 hard-coded string(s) found, exceeding the allowed 0.\n"
+}

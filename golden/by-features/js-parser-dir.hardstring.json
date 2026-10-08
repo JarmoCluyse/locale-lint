@@ -1,0 +1,7 @@
+{
+  "project": "by-features/js-parser-dir",
+  "command": "hardstring",
+  "exitCode": 3,
+  "stdout": "{\n  \"schemaVersion\": 1,\n  \"summary\": {\n    \"filesScanned\": 7,\n    \"filesSkipped\": 0,\n    \"findingsCount\": 3\n  },\n  \"findings\": [\n    {\n      \"file\": \"App.vue\",\n      \"line\": 13,\n      \"column\": 9,\n      \"endLine\": 13,\n      \"endColumn\": 14,\n      \"text\": \"App\",\n      \"source\": \"js-string\",\n      \"languageId\": \"vue\"\n    },\n    {\n      \"file\": \"locales/zh-cn/a.ts\",\n      \"line\": 2,\n      \"column\": 6,\n      \"endLine\": 2,\n      \"endColumn\": 9,\n      \"text\": \"甲\",\n      \"source\": \"js-string\",\n      \"languageId\": \"typescript\"\n    },\n    {\n      \"file\": \"locales/zh-cn/b.ts\",\n      \"line\": 2,\n      \"column\": 6,\n      \"endLine\": 2,\n      \"endColumn\": 9,\n      \"text\": \"乙\",\n      \"source\": \"js-string\",\n      \"languageId\": \"typescript\"\n    }\n  ],\n  \"skipped\": []\n}\n",
+  "stderr": "3 hard-coded string(s) found, exceeding the allowed 0.\n"
+}

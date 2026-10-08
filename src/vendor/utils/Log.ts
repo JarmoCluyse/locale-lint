@@ -1,0 +1,60 @@
+// Vendored from lokalise/i18n-ally @4c504c93 — MIT. See NOTICE.
+import { OutputChannel, window } from '../../shims/vscode'
+import { EXT_NAME } from '../meta'
+import i18n from '../../shims/i18n'
+
+export class Log {
+  private static _channel: OutputChannel
+
+  static get outputChannel(): OutputChannel {
+    if (!this._channel)
+      this._channel = window.createOutputChannel(EXT_NAME)
+    return this._channel
+  }
+
+  static raw(...values: any[]) {
+    this.outputChannel.appendLine(values.map(i => i.toString()).join(' '))
+  }
+
+  static info(message: string, indent = 0) {
+    this.outputChannel.appendLine(`${'\t'.repeat(indent)}${message}`)
+  }
+
+  static warn(message: string, prompt = false, indent = 0) {
+    if (prompt)
+      window.showWarningMessage(message)
+    Log.info(`⚠ WARN: ${message}`, indent)
+  }
+
+  static async error(err: Error | string | any = {}, prompt = true, indent = 0) {
+    if (typeof err !== 'string') {
+      const messages = [
+        err.message,
+        err.response?.data,
+        err.stack,
+        err.toJSON?.(),
+      ]
+        .filter(Boolean).join('\n')
+      Log.info(`🐛 ERROR: ${err.name}: ${messages}`, indent)
+    }
+
+    if (prompt) {
+      const openOutputButton = i18n.t('prompt.show_error_log')
+      const message = typeof err === 'string'
+        ? err
+        : `${EXT_NAME} Error: ${err.toString()}`
+
+      const result = await window.showErrorMessage(message, openOutputButton)
+      if (result === openOutputButton)
+        this.show()
+    }
+  }
+
+  static show() {
+    this._channel.show()
+  }
+
+  static divider() {
+    this.outputChannel.appendLine('\n――――――\n')
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "project": "by-frameworks/ui5",
+  "command": "hardstring",
+  "exitCode": 3,
+  "stdout": "{\n  \"schemaVersion\": 1,\n  \"summary\": {\n    \"filesScanned\": 6,\n    \"filesSkipped\": 0,\n    \"findingsCount\": 1\n  },\n  \"findings\": [\n    {\n      \"file\": \"webapp/index.html\",\n      \"line\": 5,\n      \"column\": 9,\n      \"endLine\": 5,\n      \"endColumn\": 28,\n      \"text\": \"Quickstart Tutorial\",\n      \"source\": \"html-inline\",\n      \"languageId\": \"html\"\n    }\n  ],\n  \"skipped\": []\n}\n",
+  "stderr": "1 hard-coded string(s) found, exceeding the allowed 0.\n"
+}

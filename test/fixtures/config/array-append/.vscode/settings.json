@@ -1,0 +1,3 @@
+{
+  "i18n-ally.usage.scanningIgnore": ["**/editor-ignore/**"]
+}

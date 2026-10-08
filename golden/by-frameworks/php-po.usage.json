@@ -1,0 +1,7 @@
+{
+  "project": "by-frameworks/php-po",
+  "command": "usage",
+  "exitCode": 0,
+  "stdout": "{\n  \"schemaVersion\": 1,\n  \"summary\": {\n    \"filesScanned\": 1,\n    \"filesSkipped\": 0,\n    \"missingCount\": 0,\n    \"unusedCount\": 0,\n    \"usedKeyCount\": 2,\n    \"overallCoverage\": 100\n  },\n  \"missing\": [],\n  \"unused\": [],\n  \"coverage\": [],\n  \"dynamicKeyUsages\": [],\n  \"caveats\": [],\n  \"localeDiagnostics\": [],\n  \"skipped\": []\n}\n",
+  "stderr": ""
+}

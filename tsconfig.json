@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "module": "ESNext",
+    // Bundler resolution: the vendored i18n-ally tree uses extensionless relative
+    // imports (upstream bundles with webpack, so it never needed `.js` suffixes).
+    // Node16 resolution would require rewriting hundreds of import paths in a
+    // machine-generated tree. We bundle for distribution with esbuild instead,
+    // which is also what we want for CLI cold-start anyway.
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["src/vendor/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "test/**/*.ts", "scripts/**/*.ts"],
+  "exclude": ["dist", "node_modules", "test/conformance/corpus"]
+}

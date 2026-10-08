@@ -1,0 +1,5 @@
+{
+  "usage": {
+    "scanningIgnore": { "$append": ["**/ci-extra/**"] }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "greeting": "Hello",
+  "farewell": "Goodbye",
+  "unused_key": "I am unused",
+  "errors": {
+    "notFound": "Not found",
+    "timeout": "Timed out"
+  }
+}

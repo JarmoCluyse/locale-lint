@@ -1,0 +1,7 @@
+{
+  "project": "by-features/path-matcher/locale-namespaces",
+  "command": "usage",
+  "exitCode": 0,
+  "stdout": "{\n  \"schemaVersion\": 1,\n  \"summary\": {\n    \"filesScanned\": 1,\n    \"filesSkipped\": 0,\n    \"missingCount\": 0,\n    \"unusedCount\": 2,\n    \"usedKeyCount\": 3,\n    \"overallCoverage\": 100\n  },\n  \"missing\": [],\n  \"unused\": [\n    {\n      \"key\": \"foo.animals.cat\",\n      \"locales\": [\n        \"en\",\n        \"fr\"\n      ],\n      \"file\": \"i18n/en/foo.yml\"\n    },\n    {\n      \"key\": \"foo.bar.orange\",\n      \"locales\": [\n        \"en\",\n        \"fr\"\n      ],\n      \"file\": \"i18n/en/foo/bar.yml\"\n    }\n  ],\n  \"coverage\": [\n    {\n      \"locale\": \"en\",\n      \"total\": 5,\n      \"translated\": 5,\n      \"missing\": 0,\n      \"percentage\": 100\n    },\n    {\n      \"locale\": \"fr\",\n      \"total\": 5,\n      \"translated\": 5,\n      \"missing\": 0,\n      \"percentage\": 100\n    }\n  ],\n  \"dynamicKeyUsages\": [],\n  \"caveats\": [],\n  \"localeDiagnostics\": [],\n  \"skipped\": []\n}\n",
+  "stderr": ""
+}

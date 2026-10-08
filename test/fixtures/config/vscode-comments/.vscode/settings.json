@@ -1,0 +1,5 @@
+{
+  // this is a comment
+  "i18n-ally.sourceLanguage": "en", // trailing comma below
+  "i18n-ally.displayLanguage": "fr",
+}

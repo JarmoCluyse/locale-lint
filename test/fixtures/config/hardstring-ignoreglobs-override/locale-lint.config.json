@@ -1,0 +1,8 @@
+{
+  "usage": {
+    "scanningIgnore": ["**/usage-ignore/**"]
+  },
+  "hardString": {
+    "ignoreGlobs": ["**/hardstring-ignore/**"]
+  }
+}

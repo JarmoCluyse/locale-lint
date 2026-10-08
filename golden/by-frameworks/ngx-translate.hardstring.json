@@ -1,0 +1,7 @@
+{
+  "project": "by-frameworks/ngx-translate",
+  "command": "hardstring",
+  "exitCode": 3,
+  "stdout": "{\n  \"schemaVersion\": 1,\n  \"summary\": {\n    \"filesScanned\": 4,\n    \"filesSkipped\": 0,\n    \"findingsCount\": 1\n  },\n  \"findings\": [\n    {\n      \"file\": \"src/app.component.ts\",\n      \"line\": 6,\n      \"column\": 13,\n      \"endLine\": 19,\n      \"endColumn\": 4,\n      \"text\": \"<div>\\n      <h2>{{ 'HOME.TITLE' | translate }}</h2>\\n      <label>\\n        {{\\n          'HOME.SELECT' | translate\\n        }}\\n        <select attr=\\\"'HOME.SELECT' | translate\\\">\\n          <option *ngFor=\\\"let lang of translate.getLangs()\\\" [value]=\\\"lang\\\" [selected]=\\\"lang === translate.currentLang\\\">{{ lang }}</option>\\n        </select>\\n        <div translate> HOME.SELECT </div>\\n      </label>\\n    </div>\",\n      \"source\": \"js-template\",\n      \"languageId\": \"typescript\"\n    }\n  ],\n  \"skipped\": []\n}\n",
+  "stderr": "1 hard-coded string(s) found, exceeding the allowed 0.\n"
+}

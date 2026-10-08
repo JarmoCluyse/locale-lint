@@ -1,0 +1,5 @@
+# Adapted from upstream lokalise/i18n-ally examples/by-features/yaml — MIT. See NOTICE.
+hello: Bonjour
+animals:
+  cat: Chat
+  dog: Chien

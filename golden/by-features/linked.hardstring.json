@@ -1,0 +1,7 @@
+{
+  "project": "by-features/linked",
+  "command": "hardstring",
+  "exitCode": 3,
+  "stdout": "{\n  \"schemaVersion\": 1,\n  \"summary\": {\n    \"filesScanned\": 1,\n    \"filesSkipped\": 0,\n    \"findingsCount\": 1\n  },\n  \"findings\": [\n    {\n      \"file\": \"Demo.vue\",\n      \"line\": 6,\n      \"column\": 8,\n      \"endLine\": 6,\n      \"endColumn\": 27,\n      \"text\": \"This is a demo app.\",\n      \"source\": \"html-inline\",\n      \"languageId\": \"vue\"\n    }\n  ],\n  \"skipped\": []\n}\n",
+  "stderr": "1 hard-coded string(s) found, exceeding the allowed 0.\n"
+}

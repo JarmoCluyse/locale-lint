@@ -1,0 +1,7 @@
+{
+  "project": "by-frameworks/react-i18next",
+  "command": "usage",
+  "exitCode": 1,
+  "stdout": "{\n  \"schemaVersion\": 1,\n  \"summary\": {\n    \"filesScanned\": 4,\n    \"filesSkipped\": 0,\n    \"missingCount\": 3,\n    \"unusedCount\": 1,\n    \"usedKeyCount\": 6,\n    \"overallCoverage\": 83.33\n  },\n  \"missing\": [\n    {\n      \"key\": \"description.part2_whatever\",\n      \"locale\": \"de\",\n      \"file\": \"\",\n      \"line\": 0,\n      \"column\": 0,\n      \"occurrenceCount\": 0\n    },\n    {\n      \"key\": \"description.part2_whatever\",\n      \"locale\": \"en\",\n      \"file\": \"\",\n      \"line\": 0,\n      \"column\": 0,\n      \"occurrenceCount\": 0\n    },\n    {\n      \"key\": \"translation.foo.bar\",\n      \"locale\": \"de\",\n      \"file\": \"src/App.jsx\",\n      \"line\": 62,\n      \"column\": 6,\n      \"occurrenceCount\": 1\n    }\n  ],\n  \"unused\": [\n    {\n      \"key\": \"translation.titlew\",\n      \"locales\": [\n        \"en\"\n      ],\n      \"file\": \"public/locales/en/translation.json\"\n    }\n  ],\n  \"coverage\": [\n    {\n      \"locale\": \"de\",\n      \"total\": 6,\n      \"translated\": 4,\n      \"missing\": 2,\n      \"percentage\": 66.67\n    },\n    {\n      \"locale\": \"en\",\n      \"total\": 6,\n      \"translated\": 6,\n      \"missing\": 0,\n      \"percentage\": 100\n    }\n  ],\n  \"dynamicKeyUsages\": [],\n  \"caveats\": [],\n  \"localeDiagnostics\": [],\n  \"skipped\": []\n}\n",
+  "stderr": "3 missing key usage(s), exceeding the allowed 0.\n"
+}

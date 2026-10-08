@@ -1,0 +1,29 @@
+// Vendored from lokalise/i18n-ally @4c504c93 — MIT. See NOTICE.
+import { Json5Parser } from './json5'
+import { JsonParser } from './json'
+import { YamlParser } from './yaml'
+import { EcmascriptParser } from './ecmascript'
+import { IniParser } from './ini'
+import { PoParser } from './po'
+import { PhpParser } from './php'
+import { Properties } from './properties'
+import { FluentParser } from './ftl'
+import { Parser } from './base'
+
+export const DefaultEnabledParsers = ['json', 'yaml', 'json5']
+
+export const AvailableParsers: Parser[] = [
+  // enabled parsers
+  new JsonParser(),
+  new YamlParser(),
+  new Json5Parser(),
+
+  // available parsers
+  new EcmascriptParser('js'),
+  new EcmascriptParser('ts'),
+  new IniParser(),
+  new PoParser(),
+  new PhpParser(),
+  new Properties(),
+  new FluentParser(),
+]

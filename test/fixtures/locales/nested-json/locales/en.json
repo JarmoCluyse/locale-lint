@@ -1,0 +1,10 @@
+{
+  "hello": "Hello",
+  "farewell": "Goodbye",
+  "nested": {
+    "greeting": "Good morning",
+    "foo": {
+      "bar": "foobar"
+    }
+  }
+}

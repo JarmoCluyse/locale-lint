@@ -1,0 +1,7 @@
+{
+  "project": "by-features/js-parser",
+  "command": "hardstring",
+  "exitCode": 3,
+  "stdout": "{\n  \"schemaVersion\": 1,\n  \"summary\": {\n    \"filesScanned\": 5,\n    \"filesSkipped\": 0,\n    \"findingsCount\": 5\n  },\n  \"findings\": [\n    {\n      \"file\": \"App.vue\",\n      \"line\": 13,\n      \"column\": 9,\n      \"endLine\": 13,\n      \"endColumn\": 14,\n      \"text\": \"App\",\n      \"source\": \"js-string\",\n      \"languageId\": \"vue\"\n    },\n    {\n      \"file\": \"locales/en.ts\",\n      \"line\": 4,\n      \"column\": 12,\n      \"endLine\": 4,\n      \"endColumn\": 19,\n      \"text\": \"Basic\",\n      \"source\": \"js-string\",\n      \"languageId\": \"typescript\"\n    },\n    {\n      \"file\": \"locales/en.ts\",\n      \"line\": 5,\n      \"column\": 10,\n      \"endLine\": 5,\n      \"endColumn\": 17,\n      \"text\": \"Hello\",\n      \"source\": \"js-string\",\n      \"languageId\": \"typescript\"\n    },\n    {\n      \"file\": \"locales/ja.js\",\n      \"line\": 3,\n      \"column\": 10,\n      \"endLine\": 3,\n      \"endColumn\": 17,\n      \"text\": \"こんにちは\",\n      \"source\": \"js-string\",\n      \"languageId\": \"javascript\"\n    },\n    {\n      \"file\": \"locales/zh_cn.js\",\n      \"line\": 3,\n      \"column\": 10,\n      \"endLine\": 3,\n      \"endColumn\": 14,\n      \"text\": \"你好\",\n      \"source\": \"js-string\",\n      \"languageId\": \"javascript\"\n    }\n  ],\n  \"skipped\": []\n}\n",
+  "stderr": "5 hard-coded string(s) found, exceeding the allowed 0.\n"
+}

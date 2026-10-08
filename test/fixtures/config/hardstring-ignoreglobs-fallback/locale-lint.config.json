@@ -1,0 +1,5 @@
+{
+  "usage": {
+    "scanningIgnore": ["**/usage-ignore/**"]
+  }
+}

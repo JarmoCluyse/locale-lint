@@ -1,0 +1,7 @@
+{
+  "project": "by-features/path-matcher/namespaces-locale",
+  "command": "usage",
+  "exitCode": 1,
+  "stdout": "{\n  \"schemaVersion\": 1,\n  \"summary\": {\n    \"filesScanned\": 1,\n    \"filesSkipped\": 0,\n    \"missingCount\": 1,\n    \"unusedCount\": 2,\n    \"usedKeyCount\": 4,\n    \"overallCoverage\": 91.67\n  },\n  \"missing\": [\n    {\n      \"key\": \"foo\",\n      \"locale\": \"fr\",\n      \"file\": \"App.vue\",\n      \"line\": 6,\n      \"column\": 12,\n      \"occurrenceCount\": 1\n    }\n  ],\n  \"unused\": [\n    {\n      \"key\": \"foo.animals.cat\",\n      \"locales\": [\n        \"en\",\n        \"fr\"\n      ],\n      \"file\": \"i18n/foo/en.yml\"\n    },\n    {\n      \"key\": \"foo.bar.orange\",\n      \"locales\": [\n        \"en\",\n        \"fr\"\n      ],\n      \"file\": \"i18n/foo/bar/en.yml\"\n    }\n  ],\n  \"coverage\": [\n    {\n      \"locale\": \"en\",\n      \"total\": 6,\n      \"translated\": 6,\n      \"missing\": 0,\n      \"percentage\": 100\n    },\n    {\n      \"locale\": \"fr\",\n      \"total\": 6,\n      \"translated\": 5,\n      \"missing\": 1,\n      \"percentage\": 83.33\n    }\n  ],\n  \"dynamicKeyUsages\": [],\n  \"caveats\": [],\n  \"localeDiagnostics\": [],\n  \"skipped\": []\n}\n",
+  "stderr": "1 missing key usage(s), exceeding the allowed 0.\n"
+}
